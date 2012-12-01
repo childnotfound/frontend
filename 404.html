@@ -6,6 +6,8 @@
 			src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 		<script type="text/javascript" src="js/handlebars-1.0.rc.1.js"></script>
 		<script id="child-tpl" type="text/x-handlebars-template">
+<div class="notfound-wrapper">
+	<p class="banner">我們找不到這頁，但你有看到<strong> {{name}} </strong>嗎？</p>
 <div class="child-wrapper">
 	<div class="title">協 尋 焦 點</div>
 	<div class="avatar">
@@ -29,6 +31,7 @@
 	</div>
 	<div class="clearer"></div>
 </div>
+</div>
 		</script>
 		<style type="text/css">
 div { margin: 0px; padding: 0px; }
@@ -50,12 +53,24 @@ dl.name-value dd {
 	clear: left;
 }
 dl.name-value dt { width: 60%; float: left; }
+.notfound-wrapper {
+	padding: 6px;
+	padding-bottom: 18px;
+	border-radius: 5px;
+	background-color: #00adee;
+	box-shadow:2px 2px 8px #06C;
+}
+.notfound-wrapper p.banner{ 
+	padding: 2px;
+	margin: 16px 16px;
+	font-size: 24px;
+	color: #fff;
+}
 .child-wrapper { 
 	position: relative;
 	border-radius: 5px;
 	padding: 5px;
 	background-color: #8df;
-	box-shadow:2px 2px 6px #06C;
 }
 .child-wrapper .title { 
 	float: left;

@@ -1,4 +1,4 @@
-define(['hbs!template/main'], function (mainTPL) {
+define(['hbs!../template/main'], function (mainTPL) {
   var data = {
     name: 'ddio',
     sex: '男',

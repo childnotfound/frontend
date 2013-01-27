@@ -1,8 +1,11 @@
 @import "compass/css3";
 @import "compass/utilities/general/clearfix";
 
+$font-family: 'Apple LiGothic', 'Microsoft JhengHei', '微軟正黑體', Arial, sans-serif;
+
 body {
-  font: normal 13px/14px arial, sans-serif;
+  font: normal 13px/14px $font-family;
+  -webkit-font-smoothing: antialiased;
 }
 
 header {
@@ -58,18 +61,18 @@ header .info {
 }
 
 #main .banner-title {
-  font: normal 30px/30px arial;
+  font: normal 30px/30px $font-family;
   margin-bottom: 15px;
 }
 
 #main .banner-slogan {
-  font: normal 20px/20px arial;
+  font: normal 20px/20px $font-family;
   color: #49cfeb;
   margin-bottom: 25px;
 }
 
 #main .description {
-  font: normal 14px/24px arial, sans-serif;
+  font: normal 14px/24px $font-family;
 }
 
 #main > .banner > .video {
@@ -108,12 +111,12 @@ header .info {
 }
 
 #support_by_cat > section > h5 {
-  font: normal 23px/34px arial, sans-serif;
+  font: normal 23px/34px $font-family;
 }
 
 #support_by_cat > section > h6 {
   color: #49cfeb;
-  font: normal 16px/22px arial, sans-serif;
+  font: normal 16px/22px $font-family;
   margin-bottom: 10px;
 }
 
@@ -125,7 +128,7 @@ header .info {
   text-decoration: none;
   margin-bottom: 10px;
   color: #888989;
-  font: normal 17px/56px arial, sans-serif;
+  font: normal 17px/56px $font-family;
   background: image-url('bg-btn.png') center no-repeat;
 }
 

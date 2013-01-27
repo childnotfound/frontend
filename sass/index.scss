@@ -92,17 +92,17 @@ header .info {
   width: 1021px;
   height: 309px;
   margin: 0 auto;
-  background: white image-url('bg-wave.png') center 98% no-repeat;
+  background: white image-url('bg-wave.png') center 290px no-repeat;
   padding: 5px 0;
 }
 
 #support_by_cat > section {
   display: block;
+  position: relative;
   float: left;
   width: 260px;
   margin: 0 5px;
-  padding: 30px;
-  border-right: 1px solid #ccc;
+  padding: 30px 35px;
 }
 
 #support_by_cat > section > h5 {
@@ -125,6 +125,18 @@ header .info {
   color: #888989;
   font: normal 17px/56px arial, sans-serif;
   background: image-url('bg-btn.png') center no-repeat;
+}
+
+#support_by_cat > section:not(:last-child):after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 214px;
+  right: -6px;
+  top: -15px;
+  margin-top: 50px;
+  background: rgba(#ccc, 0.4);
 }
 
 #support_by_cat > section.has-site {

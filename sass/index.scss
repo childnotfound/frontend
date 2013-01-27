@@ -1,0 +1,159 @@
+@import "compass/css3";
+@import "compass/utilities/general/clearfix";
+
+body {
+  font: normal 13px/14px arial, sans-serif;
+}
+
+header {
+  position: relative;
+  display: block;
+  background-color: #49cfeb;
+}
+
+header .content {
+  width: 1021px;
+  height: 120px;
+  margin: 0 auto;
+  position: relative;
+  background: image-url('logo-header.png') left center no-repeat;
+}
+
+header .info {
+  width: 296px;
+  height: 84px;
+  background: image-url('contact-info.png') center no-repeat;
+  position: absolute;
+  right: -80px;;
+  bottom: 10px;
+}
+
+#main_wrapper {
+  /* min-height: 795px; */
+  background: #7c7c7c image-url('bg-main.png') center bottom repeat-x;
+}
+
+#main {
+  width: 1192px;
+  padding-top: 50px;
+  margin: 0 auto;
+  background: #ccc image-url('bg-content.jpg') left top repeat-y;
+}
+
+#main > .banner {
+  position: relative;
+  width: 960px;
+  height: 350px;
+  margin: 0 auto;
+  padding-top: 70px;
+  @include clearfix();
+  @include background-image(linear-gradient(bottom, #e1e1e1 30%, #fff 70%));
+}
+
+#main > .banner > .text {
+  float: left;
+  width: 340px;
+  margin-left: 60px;
+}
+
+#main .banner-title {
+  font: normal 30px/30px arial;
+  margin-bottom: 15px;
+}
+
+#main .banner-slogan {
+  font: normal 20px/20px arial;
+  color: #49cfeb;
+  margin-bottom: 25px;
+}
+
+#main .description {
+  font: normal 14px/24px arial, sans-serif;
+}
+
+#main > .banner > .video {
+  float: right;
+  width: 479px;
+  height: 294px;
+  margin-right: 50px;
+  background: image-url('dummy-video.jpg') center no-repeat;
+}
+
+#main > .banner > .wave {
+  position: absolute;
+  top: 20px;
+  left: 2%;
+  width: 96%;
+  height: 8px;
+  background: image-url('bg-wave.png') center no-repeat;
+}
+
+#support_by_cat {
+  width: 1021px;
+  height: 309px;
+  margin: 0 auto;
+  background: white image-url('bg-wave.png') center 98% no-repeat;
+  padding: 5px 0;
+}
+
+#support_by_cat > section {
+  display: block;
+  float: left;
+  width: 260px;
+  margin: 0 5px;
+  padding: 30px;
+  border-right: 1px solid #ccc;
+}
+
+#support_by_cat > section > h5 {
+  font: normal 23px/34px arial, sans-serif;
+}
+
+#support_by_cat > section > h6 {
+  color: #49cfeb;
+  font: normal 16px/22px arial, sans-serif;
+  margin-bottom: 10px;
+}
+
+#support_by_cat > section > a {
+  display: block;
+  width: 241px;
+  height: 56px;
+  padding-left: 20px;
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: #888989;
+  font: normal 17px/56px arial, sans-serif;
+  background: image-url('bg-btn.png') center no-repeat;
+}
+
+#support_by_cat > section.has-site {
+  border-top: 5px solid #fcbc57;
+}
+
+#support_by_cat > section.no-site {
+  border-top: 5px solid #71d39f;
+}
+
+#support_by_cat > section:last-child {
+  border-top: 5px solid #ddb3ed;
+  border-right: none;
+}
+
+footer {
+  background: #020202;
+}
+
+footer > .content {
+  width: 1021px;
+  height: 40px;
+  padding-top: 10px;
+  margin: 0 auto;
+  text-align: left;
+  background: image-url('logo-footer.png') right 10px no-repeat;
+  color: white;
+}
+
+fotter .copyright {
+  color: #ccc;
+}
